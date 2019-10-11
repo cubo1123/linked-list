@@ -4,9 +4,9 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    linkedlist.cpp \
-    node.cpp
+    LinkedList.cpp \
+    Node.cpp
 
 HEADERS += \
-    linkedlist.h \
-    node.h
+    LinkedList.h \
+    Node.h
