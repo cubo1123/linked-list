@@ -19,3 +19,19 @@ void LinkedList::add(string data,int id){
     this->last = node;
     this->length++;
 }
+
+Node* LinkedList::search(int id){
+    cout<<"\t\t\tSEARCH"<<endl;
+    Node* head = this->first;
+    while(head){
+        if(head->id==id){
+            cout << head->name << endl;
+            cout << "my position: " << head << " apunto a: " << head->next<<endl;
+            return head;
+        }
+        head = head->next;
+    }
+    cout<<"ese elemento no existe en la lista"<<endl;
+    return nullptr;
+}
+
