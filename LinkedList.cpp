@@ -35,3 +35,21 @@ Node* LinkedList::search(int id){
     return nullptr;
 }
 
+
+bool LinkedList::modify(string replace,int id){
+    cout<<"\t\t\tMODIFY"<<endl;
+    Node* head = this->first;
+    while(head){
+        if(head->id==id){
+            cout << "data antes de: " << head->name << endl;
+            cout << "my position: " << head << " apunto a: " << head->next<<endl;
+            head->name = replace;
+            cout << "data despues de: " << head->name << endl;
+            return true;
+        }
+        head = head->next;
+    }
+    cout<<"ese elemento no existe en la lista"<<endl;
+    return false;
+}
+
