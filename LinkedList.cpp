@@ -70,3 +70,14 @@ void LinkedList::deleteNode(int id){
                 cout << "Ese nodo no existe!" << endl;
             }
 }
+
+
+void LinkedList::print(){
+    cout<<"\t\t\t PRINT"<<endl;
+    Node* head = this->first;
+    while(head){
+        cout << head->name << endl;
+        cout << "my position: " << head << " apunto a: " << head->next<<"Y mi id es:" << head->id << endl;
+        head = head->next;
+    }
+}
