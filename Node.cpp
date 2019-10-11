@@ -1,9 +1,5 @@
 #include "Node.h"
 
-Node::Node(){
-
-}
-
 string Node::getName() const{
     return name;
 }
@@ -18,4 +14,14 @@ int Node::getId() const{
 
 void Node::setId(int value){
     id = value;
+}
+
+Node *Node::getNext() const
+{
+    return next;
+}
+
+void Node::setNext(Node *value)
+{
+    next = value;
 }

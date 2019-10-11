@@ -1,12 +1,11 @@
 #include <iostream>
 #include <cstdlib>
 
-#include<Linkedlist.h>
+#include<LinkedList.h>
 
 using namespace std;
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]){
     LinkedList list;
     int opc;
     char name[30];

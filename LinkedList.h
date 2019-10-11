@@ -3,8 +3,7 @@
 #include<Node.h>
 
 
-class LinkedList
-{
+class LinkedList{
 public:
     LinkedList();
     ~LinkedList();
