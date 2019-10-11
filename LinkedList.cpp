@@ -53,3 +53,20 @@ bool LinkedList::modify(string replace,int id){
     return false;
 }
 
+void LinkedList::deleteNode(int id){
+            cout<<"\t\t\t DELETE"<<endl;
+            Node* temp = this->first;
+            Node *prev;
+            while(temp->next != NULL && temp->id != id){
+                prev = temp;
+                temp = temp->next;
+            }
+            if(temp->id == id){
+                cout << "data antes de: " << temp->name << endl;
+                cout << "my position: " << temp << " apunto a: " << temp->next<<endl;
+                prev->next = temp->next;
+                delete temp;
+            }else if(temp->next == NULL){
+                cout << "Ese nodo no existe!" << endl;
+            }
+}
